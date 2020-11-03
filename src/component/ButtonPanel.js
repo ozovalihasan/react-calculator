@@ -1,38 +1,39 @@
 import React from 'react';
 import Button from './Button';
+import '../index.scss';
 
 function ButtonPanel() {
   return (
     <>
-      <>
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
+      <div className="button-row">
+        <Button name="AC" color="darkgray" />
+        <Button name="+/-" color="darkgray" />
+        <Button name="%" color="darkgray" />
         <Button name="÷" />
-      </>
-      <>
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
+      </div>
+      <div className="button-row">
+        <Button name="7" color="darkgray" />
+        <Button name="8" color="darkgray" />
+        <Button name="9" color="darkgray" />
         <Button name="X" />
-      </>
-      <>
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
+      </div>
+      <div className="button-row">
+        <Button name="4" color="darkgray" />
+        <Button name="5" color="darkgray" />
+        <Button name="6" color="darkgray" />
         <Button name="-" />
-      </>
-      <>
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
+      </div>
+      <div className="button-row">
+        <Button name="1" color="darkgray" />
+        <Button name="2" color="darkgray" />
+        <Button name="3" color="darkgray" />
         <Button name="+" />
-      </>
-      <>
-        <Button name="0" />
-        <Button name="." />
+      </div>
+      <div className="button-row">
+        <Button name="0" wide color="darkgray" />
+        <Button name="." color="darkgray" />
         <Button name="=" />
-      </>
+      </div>
     </>
   );
 }
