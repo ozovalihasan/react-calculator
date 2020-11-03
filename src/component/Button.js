@@ -4,12 +4,15 @@ import '../index.scss';
 
 const Button = ({ name, wide, color }) => {
   const buttonPropStyle = {
-    width: `${wide ? '50%' : '25%'}`,
     backgroundColor: color,
   };
 
   return (
     <button
+      type="button"
+      className={`button w-${wide ? '50' : '25'}`}
+      style={buttonPropStyle}
+    >
       {name}
     </button>
   );
