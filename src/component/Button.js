@@ -9,9 +9,9 @@ const Button = ({ name, wide, color }) => {
   };
 
   return (
-    <div className="button" style={buttonPropStyle}>
+    <button
       {name}
-    </div>
+    </button>
   );
 };
 
