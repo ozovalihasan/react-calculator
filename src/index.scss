@@ -1,0 +1,22 @@
+@import './reset.css';
+
+.display {
+}
+
+.button-panel,
+.app,
+.display {
+  display: flex;
+}
+
+.app {
+  width: 700px;
+}
+
+.display {
+  background-color: rgb(128, 128, 128);
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+}
