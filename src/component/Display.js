@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../index.scss';
 
-const Display = ({ result }) => <div className="display">{result}</div>;
+const Display = ({ result }) => (
+  <div className="display ">
+    <div className="w-100">{result}</div>
+  </div>
+);
 
 Display.propTypes = {
   result: PropTypes.string,

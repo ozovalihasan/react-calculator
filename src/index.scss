@@ -9,6 +9,10 @@ html {
   box-sizing: border-box;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -38,8 +42,8 @@ html {
   color: #fff;
   font-weight: bold;
   width: 100%;
-  justify-content: right;
   align-items: center;
+  text-align: right;
   padding: 20px;
 }
 
