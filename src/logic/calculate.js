@@ -3,13 +3,25 @@ import operate from './operate';
 const calculate = ({ total, next, operation }, buttonName) => {
   let newTotal;
   let newNext;
-  if (buttonName === '+/-') {
-    newTotal = total * -1;
-    newNext = next * -1;
-  } else {
-    newTotal = operate(total, next, operation);
-    newNext = '';
+  switch (buttonName) {
+    case '+/-':
+      newTotal = total * -1;
+      newNext = next * -1;
+      break;
+    case 'AC':
+      newTotal = '';
+      newNext = '';
+      break;
+    case '%':
+      newTotal = total / 100;
+      newNext = next / 100;
+      break;
+    default:
+      newTotal = operate(total, next, operation);
+      newNext = '';
+      break;
   }
-  return [newTotal, newNext, operation];
+
+  return { total: newTotal, next: newNext, operation: operation };
 };
 export default calculate;

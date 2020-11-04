@@ -9,16 +9,13 @@ const operate = (numberOne, numberTwo, operation) => {
       result = numberOneBig - numberTwoBig;
       break;
     case '+':
-      result = numberOneBig + numberTwoBig;
+      result = numberOneBig * Big(1) + numberTwoBig * Big(1);
       break;
-    case '/':
+    case '÷':
       result = numberOneBig / numberTwoBig;
       break;
     case 'X':
       result = numberOneBig * numberTwoBig;
-      break;
-    case '%':
-      result = numberOneBig / 100;
       break;
     default:
       break;
