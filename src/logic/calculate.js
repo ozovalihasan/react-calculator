@@ -22,6 +22,6 @@ const calculate = ({ total, next, operation }, buttonName) => {
       break;
   }
 
-  return { total: newTotal, next: newNext, operation: operation };
+  return { total: newTotal, next: newNext, operation };
 };
 export default calculate;
