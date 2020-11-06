@@ -12,11 +12,11 @@ Please [check](https://calculator.ozovalihasan.com/).
 
 ## Description
 
-A calculator can do basic mathemical operations.
+A calculator can do basic mathematical operations.
 
 ## Features
 
-Addition, subtraction, multiplication, and division operations can be done. There are two extra buttons to make numbers positive or negative and show percentage.
+Addition, subtraction, multiplication, and division operations can be done.
 
 ## Built with
 
@@ -33,7 +33,7 @@ Addition, subtraction, multiplication, and division operations can be done. Ther
 - Change directory by using `cd react-calculator/`
 - Run `npm install`
 - Run `npm start`
-- Open browser and go to http://localhost:3000
+- Open a browser and go to http://localhost:3000
 
 ## Test app
 
@@ -45,7 +45,7 @@ Reach out to me at one of the following places!
 
 👤 **Hasan Özovalı**
 
-- Portfolio: [ozovalihasan.com](ozovalihasan.com)
+- Website: [ozovalihasan.com](ozovalihasan.com)
 - LinkedIn: [Hasan Ozovali](https://www.linkedin.com/in/hasan-ozovali/)
 - Github: [@ozovalihasan](https://github.com/ozovalihasan)
 - Twitter: [@ozovalihasan](https://twitter.com/ozovalihasan)
