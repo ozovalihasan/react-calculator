@@ -5,7 +5,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
   let newTotal;
   let newNext;
   let newOperation;
-  if (next === 'Infinity' || next === 'NaN') {
+  if (next === 'Infinity' || next === '-Infinity' || next === 'NaN') {
     newTotal = '';
     if (buttonName === 'AC') {
       newNext = '';
