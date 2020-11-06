@@ -4,24 +4,27 @@
 ![GitHub followers](https://img.shields.io/github/followers/ozovalihasan?label=ozovalihasan&style=social)
 ![Twitter URL](https://img.shields.io/twitter/follow/ozovalihasan?label=Follow&style=social)
 
+![project-screenshot](./assets/project-screenshot.png)
+
 ## Live demo
 
-Please [check](https://best-calculator-react.herokuapp.com/).
+Please [check](https://calculator.ozovalihasan.com/).
 
 ## Description
 
-Calculator is developed by using React.
+A calculator can do basic mathemical operations.
 
 ## Features
 
-To be updated.
+Addition, subtraction, multiplication, and division operations can be done. There are two extra buttons to make numbers positive or negative and show percentage.
 
 ## Built with
 
 - JavaScript(ES6)
 - React
 - Git
-- Shields.io
+- big.js
+- create-react-app-buildpack
 
 ## Setup
 
