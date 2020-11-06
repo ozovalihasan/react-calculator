@@ -21,7 +21,7 @@ const operate = (numberOne, numberTwo, operation) => {
       break;
   }
 
-  return result;
+  return result.toString();
 };
 
 export default operate;
