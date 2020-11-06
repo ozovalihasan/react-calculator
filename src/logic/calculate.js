@@ -56,7 +56,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
       case '%':
         newTotal = total;
         if (next && Number(next) !== 0) {
-          newNext = Big(next) / 100;
+          newNext = Big(next).div(100);
         } else {
           newNext = '0.00';
         }
