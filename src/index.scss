@@ -30,6 +30,8 @@ html {
 .app {
   width: 700px;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .display,
@@ -53,4 +55,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
