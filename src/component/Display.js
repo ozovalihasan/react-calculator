@@ -2,18 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../index.scss';
 
-const Display = ({ result }) => (
+const Display = ({ total, next, operation }) => (
   <div className="display ">
-    <div className="w-100">{result}</div>
+    <div className="w-100">{total || next ? total + operation + next : 0}</div>
   </div>
 );
 
 Display.propTypes = {
-  result: PropTypes.string,
+  total: PropTypes.string,
+  next: PropTypes.string,
+  operation: PropTypes.string,
 };
 
 Display.defaultProps = {
-  result: '0',
+  total: '',
+  next: '',
+  operation: '',
 };
 
 export default Display;
