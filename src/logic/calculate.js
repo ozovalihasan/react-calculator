@@ -1,4 +1,3 @@
-import Big from 'big.js';
 import operate from './operate';
 
 const calculate = ({ total, next, operation }, buttonName) => {
@@ -56,7 +55,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
       case '%':
         newTotal = total;
         if (next && Number(next) !== 0) {
-          newNext = Big(next).div(100);
+          newNext = operate(next, 100, '÷');
         } else {
           newNext = '0.00';
         }
@@ -96,6 +95,10 @@ const calculate = ({ total, next, operation }, buttonName) => {
       newOperation = operation;
     }
   }
-  return { total: newTotal.toString(), next: newNext.toString(), operation: newOperation };
+  return {
+    total: newTotal.toString(),
+    next: newNext.toString(),
+    operation: newOperation,
+  };
 };
 export default calculate;
