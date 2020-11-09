@@ -6,22 +6,26 @@ const operate = (numberOne, numberTwo, operation) => {
   const numberTwoBig = Big(numberTwo);
   switch (operation) {
     case '-':
-      result = numberOneBig - numberTwoBig;
+      result = numberOneBig.minus(numberTwoBig);
       break;
     case '+':
-      result = numberOneBig * Big(1) + numberTwoBig * Big(1);
+      result = numberOneBig.plus(numberTwoBig);
       break;
     case '÷':
-      result = numberOneBig / numberTwoBig;
+      if (Number(numberTwo) === 0) {
+        result = numberOne / numberTwo;
+      } else {
+        result = numberOneBig.div(numberTwoBig);
+      }
       break;
     case 'X':
-      result = numberOneBig * numberTwoBig;
+      result = numberOneBig.times(numberTwoBig);
       break;
     default:
       break;
   }
 
-  return result;
+  return result.toString();
 };
 
 export default operate;
