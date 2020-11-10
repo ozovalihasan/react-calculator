@@ -31,7 +31,7 @@ Button.propTypes = {
 Button.defaultProps = {
   name: '',
   wide: false,
-  color: 'orange',
+  color: 'darkgray',
   clickHandler: () => '',
 };
 
