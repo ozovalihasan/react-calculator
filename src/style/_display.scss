@@ -1,0 +1,16 @@
+.display {
+  &.main {
+    display: flex;
+    height: 100px;
+    background-color: #808080;
+    color: #fff;
+    font-weight: bold;
+    align-items: center;
+    text-align: right;
+    padding: 20px;
+  }
+
+  &.w-100 {
+    width: 100%;
+  }
+}

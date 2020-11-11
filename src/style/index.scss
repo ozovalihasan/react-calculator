@@ -1,0 +1,15 @@
+@import './reset.css';
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import './app';
+@import './button';
+@import './button-panel';
+@import './display';
