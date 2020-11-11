@@ -1,0 +1,9 @@
+.app {
+  &.main {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

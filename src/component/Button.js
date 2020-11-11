@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../index.scss';
 
 const Button = ({
   name, wide, color, clickHandler,
@@ -8,11 +7,10 @@ const Button = ({
   const buttonPropStyle = {
     backgroundColor: color,
   };
-
   return (
     <button
       type="button"
-      className={`button w-${wide ? '50' : '25'}`}
+      className={`button main ${wide ? 'w-50' : 'w-25'}`}
       style={buttonPropStyle}
       onClick={clickHandler}
     >

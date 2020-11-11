@@ -1,0 +1,21 @@
+.button {
+  &.main {
+    border: solid 1px #333;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.w-50 {
+    width: 50%;
+  }
+
+  &.w-25 {
+    width: 25%;
+  }
+}

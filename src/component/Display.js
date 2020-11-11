@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../index.scss';
 
 const Display = ({ total, next, operation }) => (
-  <div className="display ">
-    <div className="w-100">{total || next ? total + operation + next : 0}</div>
+  <div className="display main">
+    <div className="display w-100">
+      {total || next ? total + operation + next : 0}
+    </div>
   </div>
 );
 
