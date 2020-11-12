@@ -8,8 +8,14 @@ html {
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 
 @import './app';
 @import './button';
 @import './button-panel';
 @import './display';
+@import './quote';
+@import './navbar';
+@import './home';

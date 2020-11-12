@@ -17,8 +17,11 @@ const App = () => {
 
   return (
     <div className="app main">
-      <Display next={next} total={total} operation={operation} />
-      <ButtonPanel clickHandler={handleClick} />
+      <div className="app title">Let&apos;s do some math</div>
+      <div className="app calculator">
+        <Display next={next} total={total} operation={operation} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </div>
   );
 };
