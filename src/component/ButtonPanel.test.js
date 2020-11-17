@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
+import renderer from 'react-test-renderer';
 import ButtonPanel from './ButtonPanel';
 
 let container = null;
@@ -23,4 +24,11 @@ it('shows different 19 buttons', () => {
   });
   expect(container.querySelectorAll('button').length).toEqual(19);
   expect(container.textContent).toBe('AC+/-%÷789X456-123+0.=');
+});
+
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<ButtonPanel clickHandler={clickHandler} />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

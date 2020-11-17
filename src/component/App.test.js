@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import renderer from 'react-test-renderer';
 import App from './App';
 
 describe('<App />', () => {
@@ -20,5 +21,10 @@ describe('<App />', () => {
     fireEvent.click(screen.getByText('3'));
     fireEvent.click(screen.getByText('='));
     expect(screen.getByText(/12/)).toBeTruthy();
+  });
+
+  it('renders correctly', () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

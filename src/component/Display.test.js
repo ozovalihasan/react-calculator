@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
+import renderer from 'react-test-renderer';
 import Display from './Display';
 
 let container = null;
@@ -28,4 +29,11 @@ it('shows joined form of all props if any props is not equal to empty string ', 
     render(<Display next="" total="2" operation="+" />, container);
   });
   expect(container.textContent).toBe('2+');
+});
+
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<Display next="" total="2" operation="+" />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

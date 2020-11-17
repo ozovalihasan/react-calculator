@@ -2,6 +2,7 @@ import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { screen, fireEvent } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
+import renderer from 'react-test-renderer';
 import Button from './Button';
 
 let container = null;
@@ -53,4 +54,11 @@ it('creates a button with given click handler function, name, background color a
   expect(screen.getByText(/big_button/).style['background-color']).toBe(
     'orange',
   );
+});
+
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<Button name="big_button" clickHandler={clickHandler} />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });

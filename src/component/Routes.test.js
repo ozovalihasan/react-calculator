@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Routes from './Routes';
 
 describe('<Routes />', () => {
@@ -19,5 +20,11 @@ describe('<Routes />', () => {
     expect(screen.queryByText(/Welcome to our page/)).toBeFalsy();
     expect(screen.queryByText(/Let's do some math/)).toBeFalsy();
     expect(screen.queryByText(/Mathematics is not about numbers/)).toBeTruthy();
+  });
+
+  it('renders correctly', () => {
+    const component = renderer.create(<Routes />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
