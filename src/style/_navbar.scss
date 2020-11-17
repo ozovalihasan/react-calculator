@@ -1,0 +1,23 @@
+.navbar {
+  &.main {
+    width: 100%;
+    display: flex;
+  }
+
+  &.container {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 20px 20px 40px 20px;
+    font-size: 50px;
+
+    .title {
+      margin-right: auto;
+      font-size: 70px;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+  }
+}

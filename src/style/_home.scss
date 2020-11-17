@@ -1,0 +1,18 @@
+.home {
+  &.main {
+    margin: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &.title {
+    margin-bottom: 30px;
+    font-size: 50px;
+  }
+
+  &.subtitle {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+}
