@@ -3,11 +3,13 @@
     display: flex;
     width: 100%;
   }
+
   &.title {
     flex-grow: 1;
     font-size: 50px;
     padding: 50px;
   }
+
   &.calculator {
     display: flex;
     width: 700px;
