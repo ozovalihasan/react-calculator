@@ -37,7 +37,11 @@ Addition, subtraction, multiplication, and division operations can be done.
 
 ## Test app
 
-To be updated.
+- Clone this repository
+- Open terminal
+- Change directory by using `cd react-calculator/`
+- Run `npm install`
+- Run `npm test` to test all files
 
 ## Authors
 
