@@ -33,5 +33,4 @@ it('contains 3 links with different urls', () => {
     'http://localhost/calculator'
   );
   expect(screen.getByText('Quote').href).toBe('http://localhost/quote');
-  screen.debug();
 });
