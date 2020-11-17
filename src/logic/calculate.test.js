@@ -100,7 +100,7 @@ describe('Stop calculation', () => {
   });
   it('returns input without change if total equals to Infinity', () => {
     expect(
-      calculate({ total: '', next: 'Infinity', operation: '' }, '3')
+      calculate({ total: '', next: 'Infinity', operation: '' }, '3'),
     ).toEqual({
       total: '',
       next: 'Infinity',
@@ -109,7 +109,7 @@ describe('Stop calculation', () => {
   });
   it('returns input without change if total equals to -Infinity', () => {
     expect(
-      calculate({ total: '', next: '-Infinity', operation: '' }, '3')
+      calculate({ total: '', next: '-Infinity', operation: '' }, '3'),
     ).toEqual({
       total: '',
       next: '-Infinity',
@@ -140,7 +140,7 @@ it('return zero if result of calculation is less than 5*10^-21', () => {
       total: '',
       next: '0',
       operation: '',
-    }
+    },
   );
 });
 
@@ -150,6 +150,6 @@ it('return zero if result of calculation is less than 5*10^-21', () => {
       total: '',
       next: '0',
       operation: '',
-    }
+    },
   );
 });

@@ -1,4 +1,5 @@
 import operate from './operate';
+
 it('sums given values correctly', () => {
   expect(operate(2.3, 3.5, '+')).toEqual('5.8');
 });
